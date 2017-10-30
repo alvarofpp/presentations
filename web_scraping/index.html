@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Data Scraping</title>
+		<title>Web Scraping</title>
 
 		<meta name="description" content="Apresentation about web scraping with Selenium and Beautiful Soup">
 		<meta name="author" content="Álvaro Ferreira">
@@ -44,18 +44,19 @@
 			<div class="slides">
 				<!-- Início -->
 				<section data-background="img/bg-main.jpg" id="main-section">
-					<h1>Data Scraping</h1>
+					<h1>Web Scraping</h1>
 					<h4>O que você precisa saber para capturar dados da web</h4>
 					<p>
 						<small><a href="https://alvarofpp.github.io">Álvaro Ferreira Pires de Paiva</a> / <a href="http://twitter.com/alvarofpp">@alvarofpp</a></small>
 					</p>
+					<a href="http://navi.ifrn.edu.br/"><img src="img/logo.jpg" /></a>
 				</section>
 				<!-- Sumário -->
 				<section>
 					<h2>Apresentação</h2>
 					<ol>
 						<li>
-							O que é Data Scraping?
+							O que é Web Scraping?
 							<ul>
 								<li>Problemática</li>
 								<li>Ferramentas e conhecimento</li>
@@ -74,7 +75,7 @@
 				<!-- Primeira parte -->
 				<section>
 					<section>
-						<h2>O que é Data Scraping?</h2>
+						<h2>O que é Web Scraping?</h2>
 						<figure>
 								<img src="img/oq-data-scraping-process.png" />
 						</figure>
@@ -261,11 +262,96 @@ for link in soup.find_all('a'):
 						</div>
 					</section>
 				</section>
+
+				<!-- Segunda parte -->
+				<section>
+					<h2>Fluxo</h2>
+					<img src="img/fluxo.png" style="width: 150%;" />
+				</section>
+				<section>
+					<section>
+						<h2>Por que conhecer o site e pensar nos recursos?</h2>
+					</section>
+					<section>
+						<h2>Dashboard da Mortalidade CID-10</h2>
+						<div class="row" >
+							<div class="col-md-12">
+								<a href="http://svs.aids.gov.br/dashboard2/mortalidade/cid10/">
+									<img src="img/site1.png" />
+								</a>
+							</div>
+						</div>
+					</section>
+					<section>
+						<h2>Agência Nacional de Saúde Suplementar</h2>
+						<div class="row" >
+							<div class="col-md-12">
+								<a href="http://www.ans.gov.br/anstabnet/cgi-bin/dh?dados/tabnet_02.def">
+									<img src="img/site2.png" />
+								</a>
+							</div>
+						</div>
+					</section>
+					<section>
+						<h2>Análise de Sintomas Online</h2>
+						<div class="row" >
+							<div class="col-md-12">
+								<a href="http://www.analisesintomas.com/">
+									<img src="img/site3.png" />
+								</a>
+								<small>
+									<a href="http://www.analisesintomas.com/infoDoencaAjax.php?id=">
+										Link auxiliar
+									</a>
+								</small>
+							</div>
+						</div>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Por que analisar o algoritmo e otimizá-lo?</h2>
+					</section>
+					<section>
+						<h2>Algoritmo inicial</h2>
+						<div class="row" >
+							<div class="col-md-12">
+								<img src="img/otimizado-n.jpeg" />
+								<small>3 colunas</small>
+							</div>
+						</div>
+					</section>
+					<section>
+						<h2>Algoritmo otimizado</h2>
+						<div class="row" >
+							<div class="col-md-12">
+								<img src="img/otimizado-s.jpeg" />
+								<small>16 colunas</small>
+							</div>
+						</div>
+					</section>
+				</section>
+				<section>
+					<h2>Por que verificar os dados colhidos?</h2>
+					<div class="row">
+						<div class="col-md-2"></div>
+						<div class="col-md-4"><img src="img/d-csv.png" /></div>
+						<div class="col-md-4"><img src="img/d-xls.png" /></div>
+						<div class="col-md-2"></div>
+					</div>
+				</section>
+				<section>
+					<h2>Alguma dúvida?</h2>
+					<div class="frase-final">
+						<h3 class="fragment">Mãos à obra!</h3>
+					</div>
+				</section>
 			</div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
+		<script src="js/custom.js"></script>
 
 		<script>
 
